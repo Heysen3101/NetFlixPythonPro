@@ -50,10 +50,13 @@ import seaborn as sns
 sns.heatmap(data.isnull())
 plt.show()
 
+
 ###Questions
 #1)show the show id and director for 'House of Cards'
 #using isin function
 print(data[data['Title'].isin(['House of Cards'])])
+row= data.iloc[2831]  # DataFrame is 0-indexed, so 99 represents the 100th row
+print(row)
 
 # using str.contains
 print(data[data['Title'].str.contains('House of Cards')])
@@ -78,3 +81,6 @@ data.groupby('Category').Category.count().plot(kind='bar')
 plt.show()
 
 #Hello This heson pinto who uses all servies but no pay
+
+row= data.iloc[2831]  # DataFrame is 0-indexed, so 99 represents the 100th row
+print(row)
