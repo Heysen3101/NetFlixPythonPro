@@ -61,7 +61,7 @@ print(data[data['Title'].str.contains('House of Cards')])
 #2) which year had the highest number of releases?
 #check the data types and convert it from object to date and time(use date time function)
 data['Date_N'] = pd.to_datetime(data['Release_Date'].str.strip(), format='%B %d, %Y', errors='coerce')
-
+#dhdmh
 #check the number of releases in that year
 print(data['Date_N'].dt.year.value_counts())
 
