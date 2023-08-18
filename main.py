@@ -76,3 +76,5 @@ print(data.groupby('Category').Category.count())
 #show on pie chart
 data.groupby('Category').Category.count().plot(kind='bar')
 plt.show()
+
+#Hello This heson pinto who uses all servies but no pay
