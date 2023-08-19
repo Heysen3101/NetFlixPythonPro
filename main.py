@@ -18,19 +18,19 @@ data.columns = data.columns.str.capitalize()
 ''''''
 #Baic Functions used in Python
 
-#print(data.columns) #To view the columns in the dataset
+print(data.columns) #To view the columns in the dataset
 
-#print(data.head()) #To view the first 5 datainfo
+print(data.head()) #To view the first 5 datainfo
 
-#print(data.tail()) #To view the last 5 datainfo
+print(data.tail()) #To view the last 5 datainfo
 
-#print(data.shape) #To view the shape of the table
+print(data.shape) #To view the shape of the table
 
-#print(data.size) #How many cells are used in the Data
+print(data.size) #How many cells are used in the Data
 
-#print(data.dtypes) #Data type eg:float,object,int,datetime
+print(data.dtypes) #Data type eg:float,object,int,datetime
 
-#print(data.info())  #gives general information about the dataset
+print(data.info())  #gives general information about the dataset
 ''''''
 
 ''''''
@@ -46,8 +46,8 @@ data.drop_duplicates(inplace = True) #permanent changes to the dataset
 #Checking The null values
 print(data.isnull().sum()) #null values for each column
 
-#sns.heatmap(data.isnull()) #plot the null values on heatmap
-#plt.show()
+sns.heatmap(data.isnull()) #plot the null values on heatmap
+plt.show()
 ''''''
 
 ''''''
@@ -71,8 +71,8 @@ data['Release_Year_A'] = pd.to_datetime(data['Release_year'], format='%Y', error
 print(data['Release_Year_A'].dt.year.value_counts()) #count of total releases for each year
 
 #Representation on the bar graph
-#data['Release_Year_A'].dt.year.value_counts().plot(kind='bar')
-#plt.show()
+data['Release_Year_A'].dt.year.value_counts().plot(kind='bar')
+plt.show()
 ''''''
 
 ''''''
@@ -172,7 +172,7 @@ print(data.sort_values(by='Release_year', ascending=False).head(5))
 
 ''''''
 #Find all the instances where Type is movie and type is dramas |OR| Tpe is tv show and type is Listed_in TV
-#print(data[(data['Type']=='Movie') & (data['Listed_in']=='Dramas')])
+print(data[(data['Type']=='Movie') & (data['Listed_in']=='Dramas')])
 
 print(data[(data['Type']=='TV Show') & (data['Listed_in']=="Kids' TV")])
 
