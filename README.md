@@ -1,8 +1,25 @@
 ## Netflix Python Project
 ![](Netpy.png)
 #### Overview
-In this project I have used Netflix Tv Shows and movies dataset to clean the data and used the cleaned data to answer some of the questionsregarding netlix. For data transformation I used various filtering functions and aggregate functions to find the statistics. I also usedthe matplotlib and seaborn library to create some basic chartd to visualize the data.
-In this project I have showcased my skills in data cleaning and data transformation which is the most important aspect to have a cleaned data for futher using the data for visualization in tools like Power BI or Tableau.
+This project focuses on the analysis of a comprehensive dataset containing details about TV shows and movies available on Netflix. The primary objectives are data cleaning, transformation, and visualization to derive actionable insights.
+
+#### Skills Demonstrated
+1) Data Cleaning
+2) Data Transformation
+3) Basic Data Visualization
+
+#### Technologies Used
+Data Cleaning & Transformation: Native Python functions, Pandas
+Data Visualization: Matplotlib, Seaborn
+
+#### Key Features
+1) Data Cleaning: Implemented various data cleaning techniques to ensure the dataset is free of inconsistencies and inaccuracies.
+2) Data Transformation: Utilized a range of filtering and aggregate functions to transform raw data into a more interpretable format. This is crucial for statistical analysis and data visualization.
+3) Data Visualization: Created basic charts using Matplotlib and Seaborn to facilitate the data analysis process.
+
+#### Key Insights
+The project offers valuable insights into various aspects of Netflix's offerings, which can be further leveraged for more advanced analytics in tools like Power BI or Tableau.
+
 
 **PYTHON--CODE** ---> https://github.com/Heysen3101/NetFlixPythonPro/blob/master/main.py
 
